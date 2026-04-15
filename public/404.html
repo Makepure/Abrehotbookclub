@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Abrehot Book Club - Redirecting</title>
+  <script type="text/javascript">
+    const path = window.location.pathname;
+    const base = '/Abrehot-book-club/';
+    const redirect = base + '?' + new URLSearchParams({
+      redirect: path
+    }).toString();
+    window.location.href = redirect;
+  </script>
+</head>
+<body>
+  <p>Redirecting to Abrehot Book Club...</p>
+</body>
+</html>
